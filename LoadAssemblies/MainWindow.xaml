@@ -1,0 +1,14 @@
+﻿<Window x:Class="LoadAssemblies.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoadAssemblies"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="1024" Height="768">
+    <Grid>
+        <TreeView x:Name="AssemblyTree" HorizontalAlignment="Left" Height="717" Margin="10,10,0,0" VerticalAlignment="Top" Width="263"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="931,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.03,1.65"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="931,35,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="3.787,3.824"/>
+    </Grid>
+</Window>
