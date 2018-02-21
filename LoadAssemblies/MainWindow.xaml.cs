@@ -36,7 +36,7 @@ namespace LoadAssemblies
             ITypeFinder tt = (ITypeFinder)ad.CreateInstanceFromAndUnwrap(where + "/" + "LoadAssemblyHelpers.dll", "LoadAssemblyHelpers.TypeFinder");
             //ITypeFinder tz = (ITypeFinder)ad.CreateInstanceAndUnwrap("LoadAssemblyHelpers.dll", "LoadAssemblyHelpers.TypeFinder");
 
-            ad.
+            //ad.
 
             string result = tt.WhatAmI();
             string otherResult = tt.WhereAmI();
