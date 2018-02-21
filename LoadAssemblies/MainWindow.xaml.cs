@@ -30,6 +30,17 @@ namespace LoadAssemblies
             var files = Directory.GetFiles(".", "G9PX_*.dll");
             string where = Directory.GetCurrentDirectory();
 
+           
+
+            AppDomain ad = AppDomain.CreateDomain("TestDomain1");
+            ITypeFinder tt = (ITypeFinder)ad.CreateInstanceFromAndUnwrap(where + "/" + "LoadAssemblyHelpers.dll", "LoadAssemblyHelpers.TypeFinder");
+            //ITypeFinder tz = (ITypeFinder)ad.CreateInstanceAndUnwrap("LoadAssemblyHelpers.dll", "LoadAssemblyHelpers.TypeFinder");
+
+            ad.
+
+            string result = tt.WhatAmI();
+            string otherResult = tt.WhereAmI();
+
             foreach (string file in files)
             {
                 var item = Assembly.LoadFile(where + "/" + file);
@@ -40,6 +51,8 @@ namespace LoadAssemblies
                 string name = myObject.TestMethod();
 
                 //var otherItem = Assembly.LoadFrom(file);
+
+
             }
         }
     }

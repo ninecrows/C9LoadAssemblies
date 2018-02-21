@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace LoadAssemblyHelpers
 {
-    public class Class1
+    public interface ITypeFinder 
     {
+          string WhatAmI();
+
+        string WhereAmI();
     }
 }
